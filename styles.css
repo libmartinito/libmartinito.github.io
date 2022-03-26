@@ -122,3 +122,31 @@ a {
     -2px 2px var(--neutral-50), -2px -2px var(--neutral-50);
   color: var(--neutral-700);
 }
+
+.project {
+  margin: 2rem 0;
+}
+
+.project__title {
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  line-height: normal;
+  padding: 0.5rem 0;
+}
+
+.project__tech {
+  display: flex;
+  padding-left: 1rem;
+  margin: 0.5rem 0;
+  gap: 2rem;
+}
+
+.project__tech-item {
+  list-style-type: square;
+}
+
+.project__links {
+  display: flex;
+  gap: 1rem;
+}

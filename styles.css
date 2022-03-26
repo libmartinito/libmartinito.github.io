@@ -7,6 +7,7 @@
 
 :root {
   --neutral-50: #fafafa;
+  --neutral-200: #e5e5e5;
   --neutral-500: #737373;
   --neutral-600: #525252;
   --neutral-700: #404040;
@@ -23,6 +24,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.header__wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+  background-color: var(--neutral-50);
+  display: flex;
+  justify-content: center;
 }
 
 .header {
@@ -46,11 +58,6 @@
 
 .main-nav__item {
   list-style: none;
-  color: var(--neutral-500);
-}
-
-.main-nav__item:hover {
-  color: var(--neutral-700);
 }
 
 .body {
@@ -70,13 +77,11 @@
   line-height: 1;
   font-family: "Montserrat", sans-serif;
   letter-spacing: normal;
-  padding-left: 2rem;
 }
 
-.hero__copy-two,
-.hero__copy-three {
+.hero__copy-two {
   font-family: "Merriweather", serif;
-  padding-left: 3rem;
+  padding-left: 1rem;
 }
 
 .info {
@@ -123,8 +128,23 @@ a {
   color: var(--neutral-700);
 }
 
+.main-nav__link {
+  border: none;
+  text-shadow: none;
+  color: var(--neutral-500);
+}
+
+.main-nav__link:hover {
+  color: var(--neutral-700);
+}
+
 .project {
-  margin: 2rem 0;
+  padding: 4rem 0;
+}
+
+.project__image {
+  box-shadow: 0 3px 6px var(--neutral-500);
+  box-shadow: 0 10px 20px var(--neutral-200);
 }
 
 .project__title {
@@ -132,13 +152,13 @@ a {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   line-height: normal;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
 }
 
 .project__tech {
   display: flex;
   padding-left: 1rem;
-  margin: 0.5rem 0;
+  margin: 1rem 0;
   gap: 2rem;
 }
 
@@ -149,4 +169,43 @@ a {
 .project__links {
   display: flex;
   gap: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    font-size: 12px;
+  }
+
+  .header,
+  .body {
+    width: 90vw;
+  }
+
+  .header__wrapper {
+    top: calc(100vh - 54px);
+  }
+
+  .body {
+    padding-bottom: 8rem;
+  }
+
+  .hero__copy-one {
+    font-size: 5.8rem;
+  }
+
+  .hero__copy-two {
+    padding-left: 0.6rem;
+  }
+
+  .info__skill {
+    width: 80px;
+  }
+
+  a {
+    line-height: 1.1;
+  }
+
+  .project__image {
+    width: 90vw;
+  }
 }

@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --neutral-50: #fafafa;
+  --neutral-500: #737373;
+  --neutral-600: #525252;
+  --neutral-700: #404040;
+  box-sizing: border-box;
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  background-color: var(--neutral-50);
+  color: var(--neutral-700);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.icon {
+  background-color: var(--neutral-700);
+  width: 30px;
+  height: 30px;
+}
+
+.main-nav__list {
+  display: flex;
+  gap: 1rem;
+}
+
+.main-nav__item {
+  list-style: none;
+  color: var(--neutral-500);
+}
+
+.main-nav__item:hover {
+  color: var(--neutral-700);
+}
+
+.body {
+  width: 600px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8rem 0;
+}
+
+.hero__copy-one {
+  font-size: 8rem;
+  font-weight: 800;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: normal;
+  padding-left: 2rem;
+}
+
+.hero__copy-two,
+.hero__copy-three {
+  font-family: "Merriweather", serif;
+  padding-left: 3rem;
+}
+
+.info {
+  margin: 4rem 0;
+}
+
+.info__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  letter-spacing: normal;
+}
+
+i {
+  font-size: 40px;
+}
+.info__skillname {
+  font-size: 0.8rem;
+}
+
+.info__skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+}
+
+.info__skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  width: fit-content;
+  border-bottom: 2px solid var(--neutral-700);
+  line-height: 1;
+  text-shadow: 2px 2px var(--neutral-50), 2px -2px var(--neutral-50),
+    -2px 2px var(--neutral-50), -2px -2px var(--neutral-50);
+  color: var(--neutral-700);
+}
